@@ -1,10 +1,12 @@
 {
-  "name": "hajimetest",
-  "version": "0.20140815.0",
-  "description": "Yeoman generator for a website auto-reloaded by changing *.html, *.css and *.js files.",
+  "name": "generator-gulp-sass-livereload",
+  "version": "0.0.1",
+  "description": "Yeoman generator | auto-reloaded and sass",
   "keywords": [
     "yeoman-generator",
     "gulp",
+    "livereload",
+    "sass",
     "gulp-plugin"
   ],
   "homepage": "https://github.com/hajimenagata/generator-gulp-sass-livereload",
@@ -45,5 +47,6 @@
     {
       "type": "MIT"
     }
-  ]
+  ],
+  "readme": {}
 }

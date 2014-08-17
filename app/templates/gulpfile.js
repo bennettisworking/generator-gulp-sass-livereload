@@ -1,7 +1,10 @@
 'use strict';
 
 var gulp = require('gulp');
+var browserSync = require('browser-sync');
+var reload = browserSync.reload;
 var $ = require('gulp-load-plugins')();
+
 
 gulp.task('connect', function () {
     var connect = require('connect');
@@ -17,19 +20,47 @@ gulp.task('connect', function () {
         });
 });
 
+
 gulp.task('serve', ['connect'], function () {
     require('opn')('http://localhost:9000');
 });
 
+
+
+gulp.task('styles', function () {
+    return gulp.src('app/sass/**/*.scss')
+        .pipe($.sass({errLogToConsole: true}))
+        .pipe($.autoprefixer('last 1 version'))
+        .pipe(gulp.dest('app/styles'))
+        .pipe(reload({stream:true}))
+//        .pipe($.notify("Compilation complete."))
+        ;
+});
+
+
+
+gulp.task('scripts', function () {
+    return gulp.src('app/scripts/**/*.js')
+        .pipe($.jshint())
+        .pipe($.jshint.reporter(require('jshint-stylish')))
+        .pipe($.size());
+});
+
+
+
 gulp.task('watch', ['connect', 'serve'], function () {
     var server = $.livereload();
 
+    gulp.watch('app/sass/**/*.scss', ['styles']);
+    gulp.watch('app/scripts/**/*.js', ['scripts']);
     gulp.watch([
         'app/*.html',
         'app/styles/**/*.css',
+        'app/sass/**/*.scss',
         'app/scripts/**/*.js'
     ]).on('change', function (file) {
         server.changed(file.path);
     });
+
 });
 

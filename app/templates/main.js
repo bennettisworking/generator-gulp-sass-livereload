@@ -1,1 +1,1 @@
-console.log('Hello gulp-livereload!');
+console.log('Hello!');

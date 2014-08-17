@@ -1,5 +1,5 @@
 {
-    "name": "my-gulp-livereload",
+    "name": "my-gulp-sass-livereload",
     "private": true,
     "dependencies": {},
     "devDependencies": {}

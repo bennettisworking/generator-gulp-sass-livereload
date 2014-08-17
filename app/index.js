@@ -5,7 +5,7 @@ var chalk  = require('chalk');
 var yeoman = require('yeoman-generator');
 
 var greeting = chalk.cyan('\n--------------------------------------') +
-                  chalk.cyan('\ngulp-livereload') +
+                  chalk.cyan('\ngulp-sass-livereload') +
                   chalk.cyan('\n--------------------------------------');
 
 var MyGenerator = module.exports = function MyGenerator(args, options, config) {
@@ -42,10 +42,12 @@ MyGenerator.prototype.app = function app() {
     this.mkdir('app');
     this.mkdir('app/scripts');
     this.mkdir('app/styles');
+    this.mkdir('app/sass');
 
     this.template('_index.html', 'app/index.html');
     this.template('main.js', 'app/scripts/main.js');
     this.template('styles.css', 'app/styles/styles.css');
+    this.template('styles.scss', 'app/sass/styles.scss');
 
     this.copy('_package.json', 'package.json');
     this.copy('_bower.json', 'bower.json');
