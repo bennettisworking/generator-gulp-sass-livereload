@@ -4,12 +4,12 @@
 
 ## Getting Started
 
-You need Yeoman generator to use this generator.
+You need to install Yeoman to use this generator.
 ```
 $ npm install -g yo
 ```
 
-And then install generator-gulp-sass-livereload.
+And then install it.
 
 ```
 $ npm install -g generator-gulp-sass-livereload
