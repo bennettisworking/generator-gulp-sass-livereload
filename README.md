@@ -1,4 +1,4 @@
-# generator-gulp-livereload
+# generator-gulp-sass-livereload
 
 > [Yeoman](http://yeoman.io) generator
 
@@ -9,16 +9,16 @@ You need Yeoman generator to use this generator.
 $ npm install -g yo
 ```
 
-And then install generator-gulp-livereload.
+And then install generator-gulp-sass-livereload.
 
 ```
-$ npm install -g generator-gulp-livereload
+$ npm install -g generator-gulp-sass-livereload
 ```
 
 Finally, initiate the generator.
 
 ```
-$ yo gulp-livereload
+$ yo gulp-sass-livereload
 ```
 
 And start watch task with this.
