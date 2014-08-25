@@ -1,6 +1,6 @@
 {
   "name": "generator-gulp-sass-livereload",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Yeoman generator | auto-reloaded and sass",
   "keywords": [
     "yeoman-generator",
