@@ -3,6 +3,8 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
+var serveStatic = require('serve-static');
+var serveIndex = require('serve-index');
 var $ = require('gulp-load-plugins')();
 
 
@@ -10,8 +12,8 @@ gulp.task('connect', function () {
     var connect = require('connect');
     var app = connect()
         .use(require('connect-livereload')({ port: 35729 }))
-        .use(connect.static('app'))
-        .use(connect.directory('app'));
+        .use(serveStatic('app'))
+        .use(serveIndex('app'));
 
     require('http').createServer(app)
         .listen(9000)
