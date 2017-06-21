@@ -1,32 +1,38 @@
-# generator-gulp-sass-livereload
+# generator-yo-generator [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+> 
 
-> [Yeoman](http://yeoman.io) generator
+## Installation
 
-## Getting Started
+First, install [Yeoman](http://yeoman.io) and generator-yo-generator using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
-You need to install Yeoman to use this generator.
-```
-$ npm install -g yo
-```
-
-And then install it.
-
-```
-$ npm install -g generator-gulp-sass-livereload
+```bash
+npm install -g yo
+npm install -g generator-yo-generator
 ```
 
-Finally, initiate the generator.
+Then generate your new project:
 
-```
-$ yo gulp-sass-livereload
+```bash
+yo yo-generator
 ```
 
-And start watch task with this.
+## Getting To Know Yeoman
 
-```
-$ gulp watch
-```
+ * Yeoman has a heart of gold.
+ * Yeoman is a person with feelings and opinions, but is very easy to work with.
+ * Yeoman can be too opinionated at times but is easily convinced not to be.
+ * Feel free to [learn more about Yeoman](http://yeoman.io/).
 
 ## License
 
-MIT License
+Apache-2.0 © [Hajime Nagata](https://github.com/hajimenagata)
+
+
+[npm-image]: https://badge.fury.io/js/generator-yo-generator.svg
+[npm-url]: https://npmjs.org/package/generator-yo-generator
+[travis-image]: https://travis-ci.org//generator-yo-generator.svg?branch=master
+[travis-url]: https://travis-ci.org//generator-yo-generator
+[daviddm-image]: https://david-dm.org//generator-yo-generator.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org//generator-yo-generator
+[coveralls-image]: https://coveralls.io/repos//generator-yo-generator/badge.svg
+[coveralls-url]: https://coveralls.io/r//generator-yo-generator

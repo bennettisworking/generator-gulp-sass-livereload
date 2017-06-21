@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Hajime Nagata",
+      "authorEmail": "hajime.naga@gmail.com",
+      "authorUrl": "https://github.com/hajimenagata"
+    }
+  }
+}
